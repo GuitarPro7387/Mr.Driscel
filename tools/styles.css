@@ -1,0 +1,324 @@
+
+:root{
+    --color_text_white:#FAF6F2;
+    --color_text_gray:#D0D0D0;
+    --color_text_orange:#BB8C5F;
+    --color_text_gray_2:#636B78;
+    --color_orange:#BB8C5F;
+    --color_text_dark:#3E424B;
+    --color_black:#050402;
+    --color_dark_orange:#524336;
+    --color_bg_card:#F5F5F5;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1216px;
+    margin: auto;
+}
+/* nav1--------------------- */
+
+.nav1{
+    display: flex;
+    background-color: var(--color_black);
+    border-bottom: 3px solid var(--color_text_orange);
+    outline: 20px solid var(--color_black);
+
+}
+
+.nav1_contacts_number{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    justify-content: left;
+}
+.nav1_contacts_number > h5{
+    width: 100%;
+    max-width: 118px;
+    color: var(--color_text_white);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+.nav1_contacts{
+    margin-top: 37px;
+    padding-bottom: 11px;
+    padding-right: 56px;
+}
+.nav1_contacts_number > svg{
+    color: var(--color_text_white);
+
+}
+.nav1_contacts_messenger > a{
+    text-decoration: none;
+    color: var(--color_text_gray);
+    padding-top: 5px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+}
+.nav1_contacts_messenger > a:nth-of-type(2){
+    color: var(--color_text_orange);
+}
+.nav1_mail{
+    display: flex;
+    color:var(--color_text_white);
+    gap: 20px;
+    margin-top: 37px;
+    margin-right: 142px;
+}
+.nav1_mail > h1{
+    color: var(--color_text_white);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+
+}
+.nav1_ikon{
+    margin-right: 173px;
+    margin-top: 14px;
+}
+.nav1_referens{
+    width: 250px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav1_referens_text > h1{
+    color: var(--color_text_white);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+}
+.nav1_referens_ikon > svg{
+    width: 100%;
+    height: 100%;
+}
+.nav1_referens_ikon{
+    width: 100px;
+    display: flex;
+    gap: 20px;    
+}
+/* nav2--------------------- */
+
+.nav2{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color_black);
+    padding-top: 13px;
+    outline: 20px solid var(--color_black);
+
+}
+.nav2_burger{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav2_burger > svg{
+    margin-bottom: 11px;
+}
+.nav2_burger > h1{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    color: var(--color_text_white);
+    padding-bottom: 16px;
+}
+.nav2_search > input{
+    width: 418px;
+    height: 44px;
+    border: 1px solid var(--color_dark_orange);
+    background-color: var(--color_black);
+    padding:10px 10px 10px;
+    
+}
+.nav2_menu > a{
+    text-decoration: none;
+    color: var(--color_text_white);
+    
+    
+}
+.nav2_menu{
+    display: flex;
+    gap: 20px;
+    margin-top: 12px;
+}
+.nav2_menu > a:hover{
+    color: var(--color_text_orange);
+}
+/* section1-------------------- */
+.section1{
+    position: relative;
+    outline: 20px solid var(--color_black);
+
+
+    background-image: url(./img/section1_background-img.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 110px;
+    padding-bottom: 210px;
+
+}
+.section1_paragraph > h1{
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--color_text_orange);
+}
+.section1_text > p{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 140%;
+    color:var(--color_text_white);
+}
+.section1_text{
+    width: 431px;
+    margin-top: 30px;
+}
+.section1_button > button{
+    background-color: var(--color_dark_orange);
+    border: none;
+    border: 1px solid var(--color_orange);
+    width: 275px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--color_text_white);
+    margin-top: 60px;
+}
+/* section2----------------- */
+
+.section2_nav{
+    margin-top: 120px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.section2_nav > a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 114.99999999999999%;
+    color: var(--color_text_dark);
+
+}
+.section2_cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+}
+.section2_cards_cols{
+    width: 289px;
+    height: 384px;
+    background-color: var(--color_bg_card);
+}
+.section2_cards_cols_button{
+    display: flex;
+    justify-content: space-between;
+}
+.section2_cards_cols_button > h3{
+    width: 85px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 130%;
+    color: var(--color_text_orange);
+    border: 1px solid orange;
+}
+.section2_cards_cols_button > svg{
+    margin-top: 35px;
+    margin-right: 35px;
+}
+.section2_cards_cols_text > h1{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--color_text_dark);
+    margin-top: 22px;
+    margin-left: 30px;
+}
+
+.section2_cards_cols_text > p{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 130%;
+    color: var(--color_text_orange);
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.section2_button > button{
+    width: 275px;
+    height: 70px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--color_text_orange);
+    border: 2px solid var(--color_orange);
+    margin-top: 50px;
+    margin-left: 471px;
+}
+/* section3--------------------------- */
+
+/* grid templates araes "1 2 3 4 " */
+.section3_text > h1{
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    color: var(--color_text_dark);
+    margin-top: 120px;
+    margin-left: 510px;
+}
+.section3_cards{
+    height: 350px;  
+    display: grid;
+    grid-template-areas: 
+    "sas1 sas1 sas1 sas1 sas2 sas2 sas2 sas2 sas2 sas2"
+    "sas3 sas3 sas3 sas4 sas4 sas4 sas4 sas5 sas5 sas5"
+    "sas6 sas6 sas6 sas6 sas7 sas7 sas7 sas8 sas8 sas8"
+    "sas9 sas9 sas9 sas10 sas10 sas10 sas11 sas11 sas11";
+}
+.sas:nth-of-type(1){
+    grid-area: sas1;
+}
+.sas:nth-of-type(2){
+    grid-area: sas2;
+}
+.sas:nth-of-type(3){
+    grid-area: sas3;
+}
+.sas:nth-of-type(4){
+    grid-area: sas4;
+}
+.sas:nth-of-type(5){
+    grid-area: sas5;
+}
+.sas:nth-of-type(6){
+    grid-area: sas6;
+}
+.sas:nth-of-type(7){
+    grid-area: sas7;
+}
+.sas:nth-of-type(8){
+    grid-area: sas8;
+}
+.sas:nth-of-type(9){
+    grid-area: sas9;
+}
+.sas:nth-of-type(10){
+    grid-area: sas10;
+}
+.sas:nth-of-type(11){
+    grid-area: sas11;
+}
